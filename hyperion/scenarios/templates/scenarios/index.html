@@ -1,0 +1,9 @@
+{% if latest_scenario_list %}
+    <ul>
+    {% for scenario in latest_scenario_list %}
+        <li><a href="/scenarios/{{ scenario.id }}/">{{ scenario.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No scenarios are available.</p>
+{% endif %}
