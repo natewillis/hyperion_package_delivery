@@ -38,3 +38,6 @@ class Delivery(models.Model):
     end_datetime = models.DateTimeField(default=datetime.datetime.now)
     message_country_code = models.CharField(max_length=10, default=DEFAULT_MESSAGE_COUNTRY_CODE)
     placement = models.FloatField(default=0)
+
+    class Meta:
+        verbose_name_plural = 'Deliveries'
